@@ -3,7 +3,7 @@
  
 <?php
 session_start();
-$output="". shell_exec("C:\Users\Lenovo\AppData\Local\Programs\Python\Python37\python.exe dirt.py");
+$output="". shell_exec("python dirt.py");
 $output=urldecode($output);
 echo $output;
 $_SESSION['back'] = $output;
